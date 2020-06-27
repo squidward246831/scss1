@@ -410,3 +410,20 @@ DO NOT DELETE
 </select>
 </input>
 </form>
+
+
+@app.route("/correct", methods=["POST", "GET"])
+def correct():
+    password = request.form.get("password")
+    b = 246831
+
+    if [password] == b:
+        return render_template("correct.html", password=password)
+    else:
+        return render_template("correct2.html", password=password)
+
+
+
+        @app.route("/correct2", methods=["POST", "GET"])
+        def correct2():
+            return render_template("layout2.html")

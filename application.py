@@ -16,16 +16,3 @@ def hello():
     thought = request.form.get("thought")
     date = request.form.get("date")
     return render_template("hello.html", name=name, email=email, thought=thought, date=date)
-@app.route("/correct2", methods=["POST", "GET"])
-def correct2():
-    return render_template("layout2.html")
-
-
-
-@app.route("/correct", methods=["POST", "GET"])
-def correct():
-    password = 246831
-    b = 246831    
-
-    if password == b:
-        return render_template("correct.html")
