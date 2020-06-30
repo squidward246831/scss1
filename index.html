@@ -9,17 +9,17 @@
 <body>
 
 <input type="color" id="color">
-<input type="button" name="button" value="click" onclick="changeColor()">
+<input type="button" name="button" value="click to change color" onclick="changeColor()">
 
-<script type="text/javascript">
+<!--internal script-->
+
+<script>
+
 	function changeColor() {
-		
+
 		let color = document.getElementByid('color').value;
 		document.body.style.backgroundColor = color;
 	}
-
-
-
 </script>
 
 </body>
