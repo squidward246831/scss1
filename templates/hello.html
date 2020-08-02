@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    WELCOME "{{name}}"
+{% endblock %}
+
+{% block body %}
+    PLEASE ENTER PASSWORD
+    <form class="" action="{{url_for('Correct')}}" method="post">
+      <input type="password" name="" value="" placeholder="ENTER">
+      <button type="button"><a href="http://127.0.0.1:5000/Correct">ENTER</a></button>
+    </form>
+{% endblock %}

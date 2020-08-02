@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GOOD DAY "{{name}}"</title>
+        <link rel="icon" type="image/png" href="/Users/advayramakrishnan/Downloads/your-logo-2.png"/>
+        <style media="screen">
+          a {
+            color: black;
+          }
+          form {
+            background-color: black;
+          }
+        </style>
+    </head>
+    <body>
+        <h1>{% block heading %}{% endblock %}</h1>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
