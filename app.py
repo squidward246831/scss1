@@ -3,5 +3,5 @@ from flask import flask, render_template
 app=flask(__name__)
 
 @app.route("/hello")
-def index(""):
+def index():
     return render_template=("index.html")
